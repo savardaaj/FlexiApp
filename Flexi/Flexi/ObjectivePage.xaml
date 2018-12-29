@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Flexi"
+             x:Class="Flexi.ObjectivePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Title" Text="{Binding Title}" />
+            <Entry Placeholder="Description" Text="{Binding Description}" />
+            <Entry Placeholder="Location" Text="{Binding Location}" />
+            <Entry Placeholder="Duration" Text="{Binding Duration}" />
+            <Entry Placeholder="Frequency" Text="{Binding Frequency}" />
+            <Button Text="Done" Clicked="onObjectiveDone_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Flexi"
+             x:Class="Flexi.HomePage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Completed Tasks" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+        <!--Create a list view here pulling tasks from the Google Cloud Platform Firestore-->
+        <!--//Do a hardcode just for implementation sake-->
+        
+        <Label Text="Upcoming Objectives" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <!--//Create a list view here pulling tasks from the Google Cloud Platform Firestore-->
+        <!--//Do a hardcode just for implementation sake-->
+
+        <Button x:Name="btnManageObjectives" Text="Manage Objectives" IsEnabled="true" Clicked="BtnManageObjectives_Clicked"/>
+        <Button x:Name="btnManageBlocks" Text="Manage Blocks" IsEnabled="true" Clicked="BtnManageBlocks_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
